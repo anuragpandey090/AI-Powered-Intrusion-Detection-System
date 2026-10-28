@@ -1,0 +1,98 @@
+{
+  "random_split_evaluation": {
+    "evaluation_name": "Random-Split Test Evaluation",
+    "sample_size": 14004,
+    "confusion_matrix": {
+      "TN": 9925,
+      "FP": 76,
+      "FN": 15,
+      "TP": 3988
+    },
+    "metrics": {
+      "accuracy": 0.9935,
+      "precision": 0.9813,
+      "recall": 0.99625,
+      "f1_score": 0.98872,
+      "false_positive_rate": 0.0076,
+      "false_negative_rate": 0.00375
+    },
+    "per_class": {
+      "BENIGN": {
+        "precision": 0.9984909456740443,
+        "recall": 0.9924007599240076,
+        "f1-score": 0.9954365377864701,
+        "support": 10001.0
+      },
+      "ATTACK": {
+        "precision": 0.9812992125984252,
+        "recall": 0.9962528103922058,
+        "f1-score": 0.9887194744018842,
+        "support": 4003.0
+      },
+      "accuracy": 0.9935018566123964,
+      "macro avg": {
+        "precision": 0.9898950791362348,
+        "recall": 0.9943267851581067,
+        "f1-score": 0.9920780060941772,
+        "support": 14004.0
+      },
+      "weighted avg": {
+        "precision": 0.9935767420535284,
+        "recall": 0.9935018566123964,
+        "f1-score": 0.993516486034935,
+        "support": 14004.0
+      }
+    },
+    "latency_ms": {
+      "single_record_mean_ms": 42.2898,
+      "single_record_std_ms": 9.0604,
+      "batch_1000_total_mean_ms": 59.6447,
+      "per_record_in_batch_ms": 0.05964
+    }
+  },
+  "whole_file_holdout_evaluation": {
+    "evaluation_name": "Holdout File: Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv",
+    "sample_size": 30000,
+    "confusion_matrix": {
+      "TN": 29264,
+      "FP": 729,
+      "FN": 3,
+      "TP": 4
+    },
+    "metrics": {
+      "accuracy": 0.9756,
+      "precision": 0.00546,
+      "recall": 0.57143,
+      "f1_score": 0.01081,
+      "false_positive_rate": 0.02431,
+      "false_negative_rate": 0.42857
+    },
+    "per_class": {
+      "BENIGN": {
+        "precision": 0.9998974954727167,
+        "recall": 0.9756943286766913,
+        "f1-score": 0.9876476544043199,
+        "support": 29993.0
+      },
+      "ATTACK": {
+        "precision": 0.005457025920873124,
+        "recall": 0.5714285714285714,
+        "f1-score": 0.010810810810810811,
+        "support": 7.0
+      },
+      "accuracy": 0.9756,
+      "macro avg": {
+        "precision": 0.5026772606967949,
+        "recall": 0.7735614500526313,
+        "f1-score": 0.49922923260756535,
+        "support": 30000.0
+      },
+      "weighted avg": {
+        "precision": 0.9996654593631547,
+        "recall": 0.9756,
+        "f1-score": 0.9874197258074814,
+        "support": 30000.0
+      }
+    }
+  }
+}
